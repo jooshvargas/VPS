@@ -2,4 +2,51 @@
 		"inbounds": [],
 		"outbounds": [
 				{
-			
+						"mux": {
+								"enabled": false
+						},
+						"protocol": "vmess",
+						"settings": {
+								"vnext": [
+										{
+												"address": "www.googletagmanager.com",
+												"port": 443,
+												"users": [
+														{
+																"alterId": 0,
+																"id": "d2cb8181-233c-4d18-9972-8a1b04db0044",
+																"level": 8,
+																"security": "auto"
+														}
+												]
+										}
+								]
+						},
+						"streamSettings": {
+								"network": "ws",
+								"security": "tls",
+								"tlsSettings": {
+										"allowInsecure": false,
+										"serverName": "www.googletagmanager.com"
+								},
+								"wsSettings": {
+										"headers": {
+												"Host": "vps-506284276587.northamerica-south1.run.app"
+										},
+										"path": "/personalizado"
+								}
+						},
+						"tag": "V2RAY"
+				}
+		],
+		"policy": {
+				"levels": {
+						"8": {
+								"connIdle": 300,
+								"downlinkOnly": 1,
+								"handshake": 4,
+								"uplinkOnly": 1
+						}
+				}
+		}
+}
